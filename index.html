@@ -4,26 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chairs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css-styles/styles.css" />
   </head>
   <body>
     <header>
-      <a href="index.html">Chairs</a>
+      <a href="index.html" class="logo">Chairs</a>
       <nav>
-        <a href="#about">About us</a>
-        <a href="#products">Our products</a>
-        <a href="#team">Our Team</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="header-menu-option">About us</a>
+        <a href="#products" class="header-menu-option">Our products</a>
+        <a href="#team" class="header-menu-option">Our Team</a>
+        <a href="#contact" class="header-menu-option">Contact</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Ergonomy supports your efficiency</h1>
-        <button>Browse products</button>
+      <section class="main-section">
+        <h1 class="main-section-title">Ergonomy supports your efficiency</h1>
+        <button class="main-section-title-button">Browse products</button>
       </section>
       <section id="about">
         <article>
-          <h2>Who we are</h2>
-          <p>
+          <h2 class="about-article-title">Who we are</h2>
+          <p class="about-article-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint
             veritatis unde autem asperiores perspiciatis suscipit voluptatum
             atque iusto ratione, omnis ipsam corporis recusandae ipsa porro
@@ -31,8 +42,8 @@
           </p>
         </article>
         <article>
-          <h2>What do we offer</h2>
-          <p>
+          <h2 class="about-article-title">What do we offer</h2>
+          <p class="about-article-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint
             veritatis unde autem asperiores perspiciatis suscipit voluptatum
             atque iusto ratione, omnis ipsam corporis recusandae ipsa porro
@@ -40,8 +51,8 @@
           </p>
         </article>
         <article>
-          <h2>Our stores</h2>
-          <p>
+          <h2 class="about-article-title">Our stores</h2>
+          <p class="about-article-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint
             veritatis unde autem asperiores perspiciatis suscipit voluptatum
             atque iusto ratione, omnis ipsam corporis recusandae ipsa porro
@@ -49,8 +60,8 @@
           </p>
         </article>
         <article>
-          <h2>Shipping abroad</h2>
-          <p>
+          <h2 class="about-article-title">Shipping abroad</h2>
+          <p class="about-article-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint
             veritatis unde autem asperiores perspiciatis suscipit voluptatum
             atque iusto ratione, omnis ipsam corporis recusandae ipsa porro
@@ -59,79 +70,88 @@
         </article>
       </section>
       <section id="products">
-        <h2>Our products</h2>
-        <ul>
-          <li>
-            <img
-              src="images/products/elite.jpg"
-              alt="Ergonomic office chair version ELITE"
-              width="400"
-            />
-          </li>
-          <li>
-            <img
-              src="images/products/ergowork.jpg"
-              alt="Ergonomic office chair version ERGOWORK"
-              width="400"
-            />
-          </li>
-          <li>
-            <img
-              src="images/products/phantom.jpg"
-              alt="Ergonomic office chair version PHANTOM"
-              width="400"
-            />
-          </li>
-        </ul>
-      </section>
-      <section id="team">
-        <h2>Our team</h2>
+        <h2 class="homepage-section-title">Our products</h2>
         <ul>
           <li>
             <figure>
+              <img
+                src="images/products/elite.jpg"
+                alt="Ergonomic office chair version ELITE"
+                width="400"
+              />
+              <figcaption class="product-name">Elite</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/products/ergowork.jpg"
+                alt="Ergonomic office chair version ERGOWORK"
+                width="400"
+              />
+              <figcaption class="product-name">Ergowork</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/products/phantom.jpg"
+                alt="Ergonomic office chair version PHANTOM"
+                width="400"
+              />
+              <figcaption class="product-name">Phantom</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section id="team" class="team">
+        <h2 class="homepage-section-title">Our team</h2>
+        <ul>
+          <li>
+            <figure class="team-member">
               <img
                 src="images/staff/john.jpg"
                 alt="a man in glasses"
                 width="200"
               />
               <figcaption>
-                <div>John Doe</div>
-                <div>Designer</div>
+                <div class="team-member-name">John Doe</div>
+                <div class="team-member-role">Designer</div>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-member">
               <img
                 src="images/staff/markus.jpg"
                 alt="a man in glasses"
                 width="200"
               />
               <figcaption>
-                <div>Markus Green</div>
-                <div>Marketing Specialist</div>
+                <div class="team-member-name">Markus Green</div>
+                <div class="team-member-role">Marketing Specialist</div>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-member">
               <img src="images/staff/matt.jpg" alt="smiling man" width="200" />
               <figcaption>
-                <div>Matt Johnson</div>
-                <div>Ergonomy Specialist</div>
+                <div class="team-member-name">Matt Johnson</div>
+                <div class="team-member-role">Ergonomy Specialist</div>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-member">
               <img
                 src="images/staff/judy.jpg"
                 alt="a woman in glassess"
                 width="200"
               />
               <figcaption>
-                <div>Judy Alvares</div>
-                <div>Customer Service Specialist</div>
+                <div class="team-member-name">Judy Alvarez</div>
+                <div class="team-member-role">Customer Service Specialist</div>
               </figcaption>
             </figure>
           </li>
@@ -139,17 +159,13 @@
       </section>
     </main>
 
-    <footer id="contact">
+    <footer id="contact" class="footer">
       <section>
-        <a href="index.html">Chairs</a>
+        <a href="index.html" class="logo footer-logo">Chairs</a>
         <address>
-          <div>
-            80-254 Gdańsk
-            <br />
-            Ul. De Gaullea 15
-          </div>
-          <a>chairs@example.com</a>
-          <a>+48 111 111 111</a>
+          <div class="footer-address">Ul. De Gaullea 23, 80-254 Gdańsk</div>
+          <a class="footer-contact">chairs@example.com</a>
+          <a class="footer-contact">+48 111 111 111</a>
         </address>
       </section>
     </footer>
