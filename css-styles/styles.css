@@ -21,6 +21,12 @@ body {
   color: var(--text-color);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  padding: 24px 215px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -28,6 +34,11 @@ body {
   font-size: 26px;
   text-decoration: none;
   color: inherit;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
 }
 .header-menu-option {
   font-weight: 500;
@@ -40,6 +51,13 @@ body {
 }
 .main-section {
   text-align: center;
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: antiquewhite;
+  margin: 0px -215px;
 }
 .main-section-title {
   font-weight: 900;
@@ -55,6 +73,18 @@ body {
   font-weight: 700;
   /* font-size: 16px; BO CHYBA NIE BĘDZIE POTRZEBNE */
   color: var(--text-color-white);
+  cursor: pointer;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 94px 0px;
+}
+.about-article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .about-article-title {
   font-weight: 700;
@@ -70,17 +100,49 @@ body {
   font-size: 36px;
   text-align: center;
 }
-.product-name {
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 94px;
+}
+.products-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.products-list-product {
+  position: relative;
+}
+.products-list-product-name {
   font-weight: 700;
   font-size: 14px;
   color: var(--text-color-white);
   background-color: rgba(47, 48, 58, 0.8);
+  align-content: center;
   text-align: center;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.products-list-product-img {
+  width: 100%;
+  max-width: 300px;
 }
 .team {
   background-color: var(--secondary-background-color);
+  padding: 94px 0px;
 }
-.team-member {
+.team-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.team-list-member {
   background-color: var(--main-background-color);
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -88,25 +150,24 @@ body {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
-.team-member-name {
+.team-list-member-name {
   font-weight: 500;
 }
-.team-member-role {
+.team-list-member-role {
   color: var(--text-color-secondary);
 }
 .footer {
   background-color: var(--footer-background-color);
+  margin: 0px -215px;
 }
 .footer-logo {
   color: gold;
 }
 .footer-address {
-  font-weight: 400;
   font-size: 14px;
   color: var(--text-color-white);
 }
 .footer-contact {
-  font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
