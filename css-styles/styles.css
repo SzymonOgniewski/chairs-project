@@ -21,12 +21,16 @@ body {
   color: var(--text-color);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-  padding: 24px 215px;
 }
 .header {
+  padding: 25px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header-content-wrapper {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding: 25px 0px;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -49,37 +53,45 @@ body {
 .header-menu-option:hover {
   color: var(--brand-blue);
 }
-.main-section {
-  text-align: center;
-  padding: 200px 0;
+
+.ad-content-wrapper {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  background-color: antiquewhite;
-  margin: 0px -215px;
+  text-align: center;
 }
-.main-section-title {
+.ad-section {
+  padding: 200px 0;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  justify-items: center;
+}
+.ad-section-title {
   font-weight: 900;
   font-size: 44px;
   text-transform: uppercase;
 }
-.main-section-title-button {
+.ad-section-title-button {
   background-color: var(--brand-blue);
   width: 200px;
   height: 50px;
   border-radius: 4px;
   border: none;
   font-weight: 700;
-  /* font-size: 16px; BO CHYBA NIE BĘDZIE POTRZEBNE */
   color: var(--text-color-white);
   cursor: pointer;
 }
 .about {
+  padding: 94px 0px;
+  justify-items: center;
+}
+.about-content-wrapper {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 94px 0px;
 }
 .about-article {
   display: flex;
@@ -95,16 +107,21 @@ body {
   color: var(--text-color-secondary);
   font-size: 14px;
 }
-.homepage-section-title {
+.products-section-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
+
 .products {
+  padding-bottom: 94px;
+  justify-items: center;
+}
+.products-content-wrapper {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-bottom: 94px;
 }
 .products-list {
   list-style: none;
@@ -131,16 +148,28 @@ body {
 
 .products-list-product-img {
   width: 100%;
-  max-width: 300px;
+  max-width: 370px;
+  min-width: 300px;
 }
 .team {
   background-color: var(--secondary-background-color);
   padding: 94px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.team-content-wrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .team-list {
   list-style: none;
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 .team-list-member {
   background-color: var(--main-background-color);
@@ -149,16 +178,29 @@ body {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.team-list-member-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .team-list-member-name {
   font-weight: 500;
+}
+.team-list-member-img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 200px;
 }
 .team-list-member-role {
   color: var(--text-color-secondary);
 }
 .footer {
   background-color: var(--footer-background-color);
-  margin: 0px -215px;
+  /* margin: 0px -215px; */
 }
 .footer-logo {
   color: gold;
